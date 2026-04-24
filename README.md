@@ -1,13 +1,12 @@
 # 🎮 Sector X - Discord Bot & Ticket System
 
-Ein umfassender Discord Bot für den **Sector X RP Server** mit integriertem Web-Ticket-Dashboard.
+Ein Discord Bot für den **Sector X RP Server** mit integriertem Web-Ticket-Dashboard.
 
 ## Features
 
 ### 🤖 Discord Bot
 - **📊 Server Stats** - Detaillierte Server-Statistiken
 - **🎫 IC-Ticket System** - Kategorien: Medic, Events, Med-Chip Vorlage, Sonstiges
-- **🤖 AI Chat** - GPT-basierter Chat für IC-Fragen
 - **📝 Embed Generator** - Erstellen von Embeds für Moderatoren
 - **👋 Willkommensnachrichten** - Automatische DMs und Channel-Nachrichten
 - **🎮 Support-Raum Move Bot** - Automatisch private Voice-Channels erstellen
@@ -55,7 +54,6 @@ CLIENT_ID=your_client_id
 GUILD_ID=your_guild_id
 TICKET_CATEGORY_ID=category_id_for_tickets
 TICKET_CHANNEL_ID=channel_id_for_notifications
-OPENAI_API_KEY=your_openai_key (optional)
 ```
 
 ### 4. Installation
@@ -89,7 +87,6 @@ npm run deploy
 | `/ticket-list [status]` | Liste alle Tickets auf |
 | `/ticket-close` | Schließe das aktuelle Ticket |
 | `/embed` | Erstelle einen Embed |
-| `/ai [frage]` | Stelle dem AI Bot eine Frage |
 | `/help` | Zeigt alle Befehle |
 
 ## Ticket-Kategorien
@@ -120,23 +117,15 @@ sectorx-bot/
 ├── src/
 │   ├── commands/         # Discord Slash Commands
 │   ├── events/           # Discord Event Handler
-│   ├── db/                # SQLite Datenbank
-│   └── types/             # TypeScript Typen
+│   ├── db/               # SQLite Datenbank
+│   └── types/            # TypeScript Typen
 ├── web/
-│   ├── server.js          # Express Server
-│   └── public/            # Web Dashboard
-├── data/                  # SQLite Datenbank (auto-created)
-├── .env                   # Environment Variablen
+│   ├── server.js         # Express Server
+│   └── public/           # Web Dashboard
+├── data/                 # SQLite Datenbank (auto-created)
+├── .env                  # Environment Variablen
 └── README.md
 ```
-
-## Technologien
-
-- **Discord.js** v14 - Discord API
-- **TypeScript** - Type Safety
-- **SQLite** - Lokale Datenbank
-- **Express** - Web Server
-- **OpenAI** - KI-Chat (optional)
 
 ## Lizenz
 

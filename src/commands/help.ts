@@ -17,7 +17,6 @@ async function execute(interaction: ChatInputCommandInteraction) {
       { name: '📋 /ticket-list [status]', value: 'Liste alle Tickets auf (open, in_progress, closed)', inline: false },
       { name: '🔒 /ticket-close', value: 'Schließe das aktuelle Ticket', inline: false },
       { name: '📝 /embed', value: 'Erstelle einen Embed (Moderatoren)', inline: false },
-      { name: '🤖 /ai [frage]', value: 'Stelle dem AI Bot eine Frage', inline: false },
       { name: '📚 /help', value: 'Zeigt diese Hilfe', inline: false },
       { name: '\n🎮 Ticket-Kategorien', value: '🏥 **Medic** - Medizinische IC-Anfragen\n🎪 **Events** - Event-Anfragen\n💉 **Med-Chip** - Med-Chip Vorlagen\n📝 **Sonstiges** - Andere Anliegen', inline: false }
     )
